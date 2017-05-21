@@ -49,6 +49,7 @@ public class BowlingGame {
 	}
 
 	public static int[][] createFrame(int len, String[] cores) {
+		//创建二维数组记录
 		int[][] frame = new int[len][2];
 
 		// 初始化二维数组
@@ -59,6 +60,7 @@ public class BowlingGame {
 		}
 
 		for (int i = 0; i < len; i++) {
+			//当前格击球两次，存储两次的值
 			if (cores[i].length() == 2) {
 				frame[i][0] = resever(0, cores[i].charAt(0));
 				frame[i][1] = resever(frame[i][0], cores[i].charAt(1));
